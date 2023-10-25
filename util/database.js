@@ -3,6 +3,8 @@ const mysql = require('mysql2');
 const pool = mysql.createPool({
     host:'localhost',
     user:'root',
-    database:'node-compelete',
-    password:'roort'
+    database:'node-complete',
+    password:'root'
 })
+
+module.exports = pool.promise();
